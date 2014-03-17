@@ -1,0 +1,17 @@
+//This program will move the word 0xff in an pattern in the RAM memory.
+
+	word a -1 //this is the bitpattern we will be moving around
+	
+	load r0 a
+	loadc r1 8
+	
+		load r3 0x80
+		loadc r4 1
+Loop:	storer r0 r2 // a[]=r0
+		noop //Do nothing. Like a pause.
+		storer rf r2 // a[]=rf
+		addc r2 2 //
+		shift r2 r2 
+		addc    r1 2        // i++
+        jumpn   r1 Loop     // 
+

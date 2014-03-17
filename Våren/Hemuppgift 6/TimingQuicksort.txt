@@ -1,0 +1,222 @@
+debug:
+Time to sort 0 from 1-20 RANDOM: 0 ms
+Time to sort 0 from 1-20 RANDOM: 0 ms
+Time to sort 0 from 1-20 RANDOM: 0 ms
+Time to sort 0 from 1-20 RANDOM: 0 ms
+Time to sort 0 from 1-20 RANDOM: 0 ms
+Sorted with Basic quicksort
+Time to sort 1 from 1-20 RANDOM: 0 ms
+Time to sort 1 from 1-20 RANDOM: 0 ms
+Time to sort 1 from 1-20 RANDOM: 0 ms
+Time to sort 1 from 1-20 RANDOM: 0 ms
+Time to sort 1 from 1-20 RANDOM: 0 ms
+Sorted with Basic quicksort
+Time to sort 10000000 from 1-1000000 RANDOM: 1195 ms
+Time to sort 10000000 from 1-1000000 RANDOM: 1212 ms
+Time to sort 10000000 from 1-1000000 RANDOM: 1196 ms
+Time to sort 10000000 from 1-1000000 RANDOM: 1195 ms
+Time to sort 10000000 from 1-1000000 RANDOM: 1204 ms
+Sorted with Basic quicksort
+Time to sort 10000000 from 1-1 RANDOM: 20 ms
+Time to sort 10000000 from 1-1 RANDOM: 16 ms
+Time to sort 10000000 from 1-1 RANDOM: 16 ms
+Time to sort 10000000 from 1-1 RANDOM: 16 ms
+Time to sort 10000000 from 1-1 RANDOM: 16 ms
+Sorted with Basic quicksort
+Time to sort 10000000 from 1-5 RANDOM: 129 ms
+Time to sort 10000000 from 1-5 RANDOM: 133 ms
+Time to sort 10000000 from 1-5 RANDOM: 130 ms
+Time to sort 10000000 from 1-5 RANDOM: 133 ms
+Time to sort 10000000 from 1-5 RANDOM: 132 ms
+Sorted with Basic quicksort
+Time to sort 10000000 from 1-1000000 ASCENDING: 20 ms
+Time to sort 10000000 from 1-1000000 ASCENDING: 20 ms
+Time to sort 10000000 from 1-1000000 ASCENDING: 20 ms
+Time to sort 10000000 from 1-1000000 ASCENDING: 20 ms
+Time to sort 10000000 from 1-1000000 ASCENDING: 20 ms
+Sorted with Basic quicksort
+Time to sort 10000000 from 1-1000000 DESCENDING: 29 ms
+Time to sort 10000000 from 1-1000000 DESCENDING: 29 ms
+Time to sort 10000000 from 1-1000000 DESCENDING: 28 ms
+Time to sort 10000000 from 1-1000000 DESCENDING: 29 ms
+Time to sort 10000000 from 1-1000000 DESCENDING: 30 ms
+Sorted with Basic quicksort
+
+Time to sort 0 from 1-20 RANDOM: 0 ms
+Time to sort 0 from 1-20 RANDOM: 0 ms
+Time to sort 0 from 1-20 RANDOM: 0 ms
+Time to sort 0 from 1-20 RANDOM: 0 ms
+Time to sort 0 from 1-20 RANDOM: 0 ms
+Sorted with Quicksort with insertionsort at 6
+Time to sort 1 from 1-20 RANDOM: 0 ms
+Time to sort 1 from 1-20 RANDOM: 0 ms
+Time to sort 1 from 1-20 RANDOM: 0 ms
+Time to sort 1 from 1-20 RANDOM: 0 ms
+Time to sort 1 from 1-20 RANDOM: 0 ms
+Sorted with Quicksort with insertionsort at 6
+Time to sort 10000000 from 1-1000000 RANDOM: 1212 ms
+Time to sort 10000000 from 1-1000000 RANDOM: 1196 ms
+Time to sort 10000000 from 1-1000000 RANDOM: 1198 ms
+Time to sort 10000000 from 1-1000000 RANDOM: 1207 ms
+Time to sort 10000000 from 1-1000000 RANDOM: 1204 ms
+Sorted with Quicksort with insertionsort at 6
+Time to sort 10000000 from 1-1 RANDOM: 16 ms
+Time to sort 10000000 from 1-1 RANDOM: 16 ms
+Time to sort 10000000 from 1-1 RANDOM: 16 ms
+Time to sort 10000000 from 1-1 RANDOM: 16 ms
+Time to sort 10000000 from 1-1 RANDOM: 16 ms
+Sorted with Quicksort with insertionsort at 6
+Time to sort 10000000 from 1-5 RANDOM: 131 ms
+Time to sort 10000000 from 1-5 RANDOM: 131 ms
+Time to sort 10000000 from 1-5 RANDOM: 131 ms
+Time to sort 10000000 from 1-5 RANDOM: 133 ms
+Time to sort 10000000 from 1-5 RANDOM: 130 ms
+Sorted with Quicksort with insertionsort at 6
+Time to sort 10000000 from 1-1000000 ASCENDING: 20 ms
+Time to sort 10000000 from 1-1000000 ASCENDING: 21 ms
+Time to sort 10000000 from 1-1000000 ASCENDING: 20 ms
+Time to sort 10000000 from 1-1000000 ASCENDING: 20 ms
+Time to sort 10000000 from 1-1000000 ASCENDING: 23 ms
+Sorted with Quicksort with insertionsort at 6
+Time to sort 10000000 from 1-1000000 DESCENDING: 28 ms
+Time to sort 10000000 from 1-1000000 DESCENDING: 33 ms
+Time to sort 10000000 from 1-1000000 DESCENDING: 30 ms
+Time to sort 10000000 from 1-1000000 DESCENDING: 29 ms
+Time to sort 10000000 from 1-1000000 DESCENDING: 28 ms
+Sorted with Quicksort with insertionsort at 6
+
+Time to sort 0 from 1-20 RANDOM: 0 ms
+Time to sort 0 from 1-20 RANDOM: 0 ms
+Time to sort 0 from 1-20 RANDOM: 0 ms
+Time to sort 0 from 1-20 RANDOM: 0 ms
+Time to sort 0 from 1-20 RANDOM: 0 ms
+Sorted with Basic quicksort with random pivot
+Time to sort 1 from 1-20 RANDOM: 0 ms
+Time to sort 1 from 1-20 RANDOM: 0 ms
+Time to sort 1 from 1-20 RANDOM: 0 ms
+Time to sort 1 from 1-20 RANDOM: 0 ms
+Time to sort 1 from 1-20 RANDOM: 0 ms
+Sorted with Basic quicksort with random pivot
+Time to sort 10000000 from 1-1000000 RANDOM: 1108 ms
+Time to sort 10000000 from 1-1000000 RANDOM: 1102 ms
+Time to sort 10000000 from 1-1000000 RANDOM: 1112 ms
+Time to sort 10000000 from 1-1000000 RANDOM: 1133 ms
+Time to sort 10000000 from 1-1000000 RANDOM: 1104 ms
+Sorted with Basic quicksort with random pivot
+Time to sort 10000000 from 1-1 RANDOM: 16 ms
+Time to sort 10000000 from 1-1 RANDOM: 16 ms
+Time to sort 10000000 from 1-1 RANDOM: 16 ms
+Time to sort 10000000 from 1-1 RANDOM: 16 ms
+Time to sort 10000000 from 1-1 RANDOM: 16 ms
+Sorted with Basic quicksort with random pivot
+Time to sort 10000000 from 1-5 RANDOM: 104 ms
+Time to sort 10000000 from 1-5 RANDOM: 117 ms
+Time to sort 10000000 from 1-5 RANDOM: 109 ms
+Time to sort 10000000 from 1-5 RANDOM: 109 ms
+Time to sort 10000000 from 1-5 RANDOM: 114 ms
+Sorted with Basic quicksort with random pivot
+Time to sort 10000000 from 1-1000000 ASCENDING: 20 ms
+Time to sort 10000000 from 1-1000000 ASCENDING: 20 ms
+Time to sort 10000000 from 1-1000000 ASCENDING: 20 ms
+Time to sort 10000000 from 1-1000000 ASCENDING: 20 ms
+Time to sort 10000000 from 1-1000000 ASCENDING: 20 ms
+Sorted with Basic quicksort with random pivot
+Time to sort 10000000 from 1-1000000 DESCENDING: 30 ms
+Time to sort 10000000 from 1-1000000 DESCENDING: 30 ms
+Time to sort 10000000 from 1-1000000 DESCENDING: 29 ms
+Time to sort 10000000 from 1-1000000 DESCENDING: 29 ms
+Time to sort 10000000 from 1-1000000 DESCENDING: 29 ms
+Sorted with Basic quicksort with random pivot
+
+Time to sort 0 from 1-20 RANDOM: 0 ms
+Time to sort 0 from 1-20 RANDOM: 0 ms
+Time to sort 0 from 1-20 RANDOM: 0 ms
+Time to sort 0 from 1-20 RANDOM: 0 ms
+Time to sort 0 from 1-20 RANDOM: 0 ms
+Sorted with Quicksort with insertionsort at 6 with random pivot
+Time to sort 1 from 1-20 RANDOM: 0 ms
+Time to sort 1 from 1-20 RANDOM: 0 ms
+Time to sort 1 from 1-20 RANDOM: 0 ms
+Time to sort 1 from 1-20 RANDOM: 0 ms
+Time to sort 1 from 1-20 RANDOM: 0 ms
+Sorted with Quicksort with insertionsort at 6 with random pivot
+Time to sort 10000000 from 1-1000000 RANDOM: 1322 ms
+Time to sort 10000000 from 1-1000000 RANDOM: 1331 ms
+Time to sort 10000000 from 1-1000000 RANDOM: 1302 ms
+Time to sort 10000000 from 1-1000000 RANDOM: 1319 ms
+Time to sort 10000000 from 1-1000000 RANDOM: 1308 ms
+Sorted with Quicksort with insertionsort at 6 with random pivot
+Time to sort 10000000 from 1-1 RANDOM: 16 ms
+Time to sort 10000000 from 1-1 RANDOM: 16 ms
+Time to sort 10000000 from 1-1 RANDOM: 16 ms
+Time to sort 10000000 from 1-1 RANDOM: 16 ms
+Time to sort 10000000 from 1-1 RANDOM: 16 ms
+Sorted with Quicksort with insertionsort at 6 with random pivot
+Time to sort 10000000 from 1-5 RANDOM: 130 ms
+Time to sort 10000000 from 1-5 RANDOM: 125 ms
+Time to sort 10000000 from 1-5 RANDOM: 132 ms
+Time to sort 10000000 from 1-5 RANDOM: 130 ms
+Time to sort 10000000 from 1-5 RANDOM: 119 ms
+Sorted with Quicksort with insertionsort at 6 with random pivot
+Time to sort 10000000 from 1-1000000 ASCENDING: 20 ms
+Time to sort 10000000 from 1-1000000 ASCENDING: 20 ms
+Time to sort 10000000 from 1-1000000 ASCENDING: 20 ms
+Time to sort 10000000 from 1-1000000 ASCENDING: 20 ms
+Time to sort 10000000 from 1-1000000 ASCENDING: 20 ms
+Sorted with Quicksort with insertionsort at 6 with random pivot
+Time to sort 10000000 from 1-1000000 DESCENDING: 30 ms
+Time to sort 10000000 from 1-1000000 DESCENDING: 29 ms
+Time to sort 10000000 from 1-1000000 DESCENDING: 28 ms
+Time to sort 10000000 from 1-1000000 DESCENDING: 29 ms
+Time to sort 10000000 from 1-1000000 DESCENDING: 28 ms
+Sorted with Quicksort with insertionsort at 6 with random pivot
+
+Time to sort 0 from 1-20 RANDOM: 0 ms
+Time to sort 0 from 1-20 RANDOM: 0 ms
+Time to sort 0 from 1-20 RANDOM: 0 ms
+Time to sort 0 from 1-20 RANDOM: 0 ms
+Time to sort 0 from 1-20 RANDOM: 0 ms
+Sorted with java Arrays.sort
+Time to sort 1 from 1-20 RANDOM: 0 ms
+Time to sort 1 from 1-20 RANDOM: 0 ms
+Time to sort 1 from 1-20 RANDOM: 0 ms
+Time to sort 1 from 1-20 RANDOM: 0 ms
+Time to sort 1 from 1-20 RANDOM: 0 ms
+Sorted with java Arrays.sort
+Time to sort 10000000 from 1-1000000 RANDOM: 1248 ms
+Time to sort 10000000 from 1-1000000 RANDOM: 1246 ms
+Time to sort 10000000 from 1-1000000 RANDOM: 1242 ms
+Time to sort 10000000 from 1-1000000 RANDOM: 1247 ms
+Time to sort 10000000 from 1-1000000 RANDOM: 1250 ms
+Sorted with java Arrays.sort
+Time to sort 10000000 from 1-1 RANDOM: 18 ms
+Time to sort 10000000 from 1-1 RANDOM: 18 ms
+Time to sort 10000000 from 1-1 RANDOM: 18 ms
+Time to sort 10000000 from 1-1 RANDOM: 19 ms
+Time to sort 10000000 from 1-1 RANDOM: 18 ms
+Sorted with java Arrays.sort
+Time to sort 10000000 from 1-5 RANDOM: 144 ms
+Time to sort 10000000 from 1-5 RANDOM: 145 ms
+Time to sort 10000000 from 1-5 RANDOM: 144 ms
+Time to sort 10000000 from 1-5 RANDOM: 143 ms
+Time to sort 10000000 from 1-5 RANDOM: 145 ms
+Sorted with java Arrays.sort
+Time to sort 10000000 from 1-1000000 ASCENDING: 210 ms
+Time to sort 10000000 from 1-1000000 ASCENDING: 212 ms
+Time to sort 10000000 from 1-1000000 ASCENDING: 209 ms
+Time to sort 10000000 from 1-1000000 ASCENDING: 211 ms
+Time to sort 10000000 from 1-1000000 ASCENDING: 214 ms
+Sorted with java Arrays.sort
+Time to sort 10000000 from 1-1000000 DESCENDING: 234 ms
+Time to sort 10000000 from 1-1000000 DESCENDING: 236 ms
+Time to sort 10000000 from 1-1000000 DESCENDING: 236 ms
+Time to sort 10000000 from 1-1000000 DESCENDING: 235 ms
+Time to sort 10000000 from 1-1000000 DESCENDING: 236 ms
+Sorted with java Arrays.sort
+
+0	0	0	0	0	0	0	0	0	0	1195	1212	1196	1195	1204	20	16	16	16	16	129	133	130	133	132	20	20	20	20	20	29	29	28	29	30	
+0	0	0	0	0	0	0	0	0	0	1212	1196	1198	1207	1204	16	16	16	16	16	131	131	131	133	130	20	21	20	20	23	28	33	30	29	28	
+0	0	0	0	0	0	0	0	0	0	1108	1102	1112	1133	1104	16	16	16	16	16	104	117	109	109	114	20	20	20	20	20	30	30	29	29	29	
+0	0	0	0	0	0	0	0	0	0	1322	1331	1302	1319	1308	16	16	16	16	16	130	125	132	130	119	20	20	20	20	20	30	29	28	29	28	
+0	0	0	0	0	0	0	0	0	0	1248	1246	1242	1247	1250	18	18	18	19	18	144	145	144	143	145	210	212	209	211	214	234	236	236	235	236	
+BUILD SUCCESSFUL (total time: 2 minutes 1 second)

@@ -1,0 +1,23 @@
+Release History
+
+This file summarizes the changes between tagged releases of NIC.
+
+2011-02-19
+
+Initial release
+
+2011-03-27
+
+nic:
+A binary file may now be specified on the command line.
+Added a reload alternative in the file menu that reloads
+the most recently loaded binary file.
+
+exercises.txt:
+Clarified some exercises.
+
+2011-04-10
+
+make:
+Fixed incorrect directory name in clean target.
+

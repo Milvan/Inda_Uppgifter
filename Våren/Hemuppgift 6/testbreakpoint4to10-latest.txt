@@ -1,0 +1,471 @@
+debug:
+Time to sort 1000000 from 1-1000 RANDOM: 55 ms
+Time to sort 1000000 from 1-1000 RANDOM: 56 ms
+Time to sort 1000000 from 1-1000 RANDOM: 56 ms
+Time to sort 1000000 from 1-1000 RANDOM: 53 ms
+Time to sort 1000000 from 1-1000 RANDOM: 53 ms
+Sorted with Quicksort with insertionsort at 4
+Time to sort 1000000 from 1-1 RANDOM: 2 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Sorted with Quicksort with insertionsort at 4
+Time to sort 1000000 from 1-5 RANDOM: 12 ms
+Time to sort 1000000 from 1-5 RANDOM: 12 ms
+Time to sort 1000000 from 1-5 RANDOM: 12 ms
+Time to sort 1000000 from 1-5 RANDOM: 13 ms
+Time to sort 1000000 from 1-5 RANDOM: 12 ms
+Sorted with Quicksort with insertionsort at 4
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Sorted with Quicksort with insertionsort at 4
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 6 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Sorted with Quicksort with insertionsort at 4
+
+Time to sort 1000000 from 1-1000 RANDOM: 55 ms
+Time to sort 1000000 from 1-1000 RANDOM: 53 ms
+Time to sort 1000000 from 1-1000 RANDOM: 53 ms
+Time to sort 1000000 from 1-1000 RANDOM: 54 ms
+Time to sort 1000000 from 1-1000 RANDOM: 52 ms
+Sorted with Quicksort with insertionsort at 4 with random pivot
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Sorted with Quicksort with insertionsort at 4 with random pivot
+Time to sort 1000000 from 1-5 RANDOM: 12 ms
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 12 ms
+Time to sort 1000000 from 1-5 RANDOM: 12 ms
+Time to sort 1000000 from 1-5 RANDOM: 12 ms
+Sorted with Quicksort with insertionsort at 4 with random pivot
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 3 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Sorted with Quicksort with insertionsort at 4 with random pivot
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Sorted with Quicksort with insertionsort at 4 with random pivot
+
+55	56	56	53	53	2	1	1	1	1	12	12	12	13	12	4	4	4	4	4	5	5	5	6	5	0	0	0	0	0	0	0	0	0	0	
+
+55	53	53	54	52	1	1	1	1	1	12	11	12	12	12	4	4	4	3	4	5	5	5	5	5	0	0	0	0	0	0	0	0	0	0	
+
+Best sorter2: 4 Best sorter4: 4
+Time to sort 1000000 from 1-1000 RANDOM: 54 ms
+Time to sort 1000000 from 1-1000 RANDOM: 54 ms
+Time to sort 1000000 from 1-1000 RANDOM: 53 ms
+Time to sort 1000000 from 1-1000 RANDOM: 54 ms
+Time to sort 1000000 from 1-1000 RANDOM: 54 ms
+Sorted with Quicksort with insertionsort at 5
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Sorted with Quicksort with insertionsort at 5
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Sorted with Quicksort with insertionsort at 5
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Sorted with Quicksort with insertionsort at 5
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Sorted with Quicksort with insertionsort at 5
+
+Time to sort 1000000 from 1-1000 RANDOM: 54 ms
+Time to sort 1000000 from 1-1000 RANDOM: 52 ms
+Time to sort 1000000 from 1-1000 RANDOM: 53 ms
+Time to sort 1000000 from 1-1000 RANDOM: 51 ms
+Time to sort 1000000 from 1-1000 RANDOM: 53 ms
+Sorted with Quicksort with insertionsort at 5 with random pivot
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Sorted with Quicksort with insertionsort at 5 with random pivot
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 12 ms
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 12 ms
+Sorted with Quicksort with insertionsort at 5 with random pivot
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Sorted with Quicksort with insertionsort at 5 with random pivot
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Sorted with Quicksort with insertionsort at 5 with random pivot
+
+54	54	53	54	54	1	1	1	1	1	11	11	11	11	11	4	4	4	4	4	5	5	5	5	5	0	0	0	0	0	0	0	0	0	0	
+
+54	52	53	51	53	1	1	1	1	1	11	11	12	11	12	4	4	4	4	4	5	5	5	5	5	0	0	0	0	0	0	0	0	0	0	
+
+Best sorter2: 5 Best sorter4: 5
+Time to sort 1000000 from 1-1000 RANDOM: 53 ms
+Time to sort 1000000 from 1-1000 RANDOM: 52 ms
+Time to sort 1000000 from 1-1000 RANDOM: 52 ms
+Time to sort 1000000 from 1-1000 RANDOM: 54 ms
+Time to sort 1000000 from 1-1000 RANDOM: 52 ms
+Sorted with Quicksort with insertionsort at 6
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Sorted with Quicksort with insertionsort at 6
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Sorted with Quicksort with insertionsort at 6
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 3 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Sorted with Quicksort with insertionsort at 6
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Sorted with Quicksort with insertionsort at 6
+
+Time to sort 1000000 from 1-1000 RANDOM: 52 ms
+Time to sort 1000000 from 1-1000 RANDOM: 53 ms
+Time to sort 1000000 from 1-1000 RANDOM: 54 ms
+Time to sort 1000000 from 1-1000 RANDOM: 52 ms
+Time to sort 1000000 from 1-1000 RANDOM: 51 ms
+Sorted with Quicksort with insertionsort at 6 with random pivot
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Sorted with Quicksort with insertionsort at 6 with random pivot
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 12 ms
+Time to sort 1000000 from 1-5 RANDOM: 12 ms
+Time to sort 1000000 from 1-5 RANDOM: 12 ms
+Sorted with Quicksort with insertionsort at 6 with random pivot
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Sorted with Quicksort with insertionsort at 6 with random pivot
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Sorted with Quicksort with insertionsort at 6 with random pivot
+
+53	52	52	54	52	1	1	1	1	1	11	11	11	11	11	4	4	4	3	4	5	5	5	5	5	0	0	0	0	0	0	0	0	0	0	
+
+52	53	54	52	51	1	1	1	1	1	11	11	12	12	12	4	4	4	4	4	5	5	5	5	5	0	0	0	0	0	0	0	0	0	0	
+
+Best sorter2: 6 Best sorter4: 5
+Time to sort 1000000 from 1-1000 RANDOM: 52 ms
+Time to sort 1000000 from 1-1000 RANDOM: 52 ms
+Time to sort 1000000 from 1-1000 RANDOM: 55 ms
+Time to sort 1000000 from 1-1000 RANDOM: 53 ms
+Time to sort 1000000 from 1-1000 RANDOM: 53 ms
+Sorted with Quicksort with insertionsort at 7
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Sorted with Quicksort with insertionsort at 7
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Sorted with Quicksort with insertionsort at 7
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 3 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Sorted with Quicksort with insertionsort at 7
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Sorted with Quicksort with insertionsort at 7
+
+Time to sort 1000000 from 1-1000 RANDOM: 52 ms
+Time to sort 1000000 from 1-1000 RANDOM: 53 ms
+Time to sort 1000000 from 1-1000 RANDOM: 51 ms
+Time to sort 1000000 from 1-1000 RANDOM: 51 ms
+Time to sort 1000000 from 1-1000 RANDOM: 52 ms
+Sorted with Quicksort with insertionsort at 7 with random pivot
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Sorted with Quicksort with insertionsort at 7 with random pivot
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 12 ms
+Time to sort 1000000 from 1-5 RANDOM: 12 ms
+Time to sort 1000000 from 1-5 RANDOM: 12 ms
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Sorted with Quicksort with insertionsort at 7 with random pivot
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Sorted with Quicksort with insertionsort at 7 with random pivot
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Sorted with Quicksort with insertionsort at 7 with random pivot
+
+52	52	55	53	53	1	1	1	1	1	11	11	11	11	11	4	3	4	4	4	5	5	5	5	5	0	0	0	0	0	0	0	0	0	0	
+
+52	53	51	51	52	1	1	1	1	1	11	12	12	12	11	4	4	4	4	4	5	5	5	5	5	0	0	0	0	0	0	0	0	0	0	
+
+Best sorter2: 6 Best sorter4: 7
+Time to sort 1000000 from 1-1000 RANDOM: 53 ms
+Time to sort 1000000 from 1-1000 RANDOM: 54 ms
+Time to sort 1000000 from 1-1000 RANDOM: 52 ms
+Time to sort 1000000 from 1-1000 RANDOM: 52 ms
+Time to sort 1000000 from 1-1000 RANDOM: 53 ms
+Sorted with Quicksort with insertionsort at 8
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Sorted with Quicksort with insertionsort at 8
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 12 ms
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Sorted with Quicksort with insertionsort at 8
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Sorted with Quicksort with insertionsort at 8
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Sorted with Quicksort with insertionsort at 8
+
+Time to sort 1000000 from 1-1000 RANDOM: 53 ms
+Time to sort 1000000 from 1-1000 RANDOM: 55 ms
+Time to sort 1000000 from 1-1000 RANDOM: 54 ms
+Time to sort 1000000 from 1-1000 RANDOM: 51 ms
+Time to sort 1000000 from 1-1000 RANDOM: 53 ms
+Sorted with Quicksort with insertionsort at 8 with random pivot
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Sorted with Quicksort with insertionsort at 8 with random pivot
+Time to sort 1000000 from 1-5 RANDOM: 12 ms
+Time to sort 1000000 from 1-5 RANDOM: 12 ms
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 12 ms
+Sorted with Quicksort with insertionsort at 8 with random pivot
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 3 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 3 ms
+Sorted with Quicksort with insertionsort at 8 with random pivot
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 6 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Sorted with Quicksort with insertionsort at 8 with random pivot
+
+53	54	52	52	53	1	1	1	1	1	11	12	11	11	11	4	4	4	4	4	5	5	5	5	5	0	0	0	0	0	0	0	0	0	0	
+
+53	55	54	51	53	1	1	1	1	1	12	12	11	11	12	4	4	3	4	3	5	5	5	6	5	0	0	0	0	0	0	0	0	0	0	
+
+Best sorter2: 6 Best sorter4: 7
+Time to sort 1000000 from 1-1000 RANDOM: 52 ms
+Time to sort 1000000 from 1-1000 RANDOM: 53 ms
+Time to sort 1000000 from 1-1000 RANDOM: 53 ms
+Time to sort 1000000 from 1-1000 RANDOM: 53 ms
+Time to sort 1000000 from 1-1000 RANDOM: 53 ms
+Sorted with Quicksort with insertionsort at 9
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 2 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Sorted with Quicksort with insertionsort at 9
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Sorted with Quicksort with insertionsort at 9
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Sorted with Quicksort with insertionsort at 9
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Sorted with Quicksort with insertionsort at 9
+
+Time to sort 1000000 from 1-1000 RANDOM: 54 ms
+Time to sort 1000000 from 1-1000 RANDOM: 52 ms
+Time to sort 1000000 from 1-1000 RANDOM: 52 ms
+Time to sort 1000000 from 1-1000 RANDOM: 56 ms
+Time to sort 1000000 from 1-1000 RANDOM: 53 ms
+Sorted with Quicksort with insertionsort at 9 with random pivot
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Sorted with Quicksort with insertionsort at 9 with random pivot
+Time to sort 1000000 from 1-5 RANDOM: 12 ms
+Time to sort 1000000 from 1-5 RANDOM: 12 ms
+Time to sort 1000000 from 1-5 RANDOM: 12 ms
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 12 ms
+Sorted with Quicksort with insertionsort at 9 with random pivot
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Sorted with Quicksort with insertionsort at 9 with random pivot
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Sorted with Quicksort with insertionsort at 9 with random pivot
+
+52	53	53	53	53	1	2	1	1	1	11	11	11	11	11	4	4	4	4	4	5	5	5	5	5	0	0	0	0	0	0	0	0	0	0	
+
+54	52	52	56	53	1	1	1	1	1	12	12	12	11	12	4	4	4	4	4	5	5	5	5	5	0	0	0	0	0	0	0	0	0	0	
+
+Best sorter2: 6 Best sorter4: 7
+Time to sort 1000000 from 1-1000 RANDOM: 52 ms
+Time to sort 1000000 from 1-1000 RANDOM: 52 ms
+Time to sort 1000000 from 1-1000 RANDOM: 53 ms
+Time to sort 1000000 from 1-1000 RANDOM: 53 ms
+Time to sort 1000000 from 1-1000 RANDOM: 52 ms
+Sorted with Quicksort with insertionsort at 10
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Sorted with Quicksort with insertionsort at 10
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Sorted with Quicksort with insertionsort at 10
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Sorted with Quicksort with insertionsort at 10
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Sorted with Quicksort with insertionsort at 10
+
+Time to sort 1000000 from 1-1000 RANDOM: 53 ms
+Time to sort 1000000 from 1-1000 RANDOM: 53 ms
+Time to sort 1000000 from 1-1000 RANDOM: 52 ms
+Time to sort 1000000 from 1-1000 RANDOM: 53 ms
+Time to sort 1000000 from 1-1000 RANDOM: 54 ms
+Sorted with Quicksort with insertionsort at 10 with random pivot
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Time to sort 1000000 from 1-1 RANDOM: 1 ms
+Sorted with Quicksort with insertionsort at 10 with random pivot
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 12 ms
+Time to sort 1000000 from 1-5 RANDOM: 12 ms
+Time to sort 1000000 from 1-5 RANDOM: 11 ms
+Time to sort 1000000 from 1-5 RANDOM: 12 ms
+Sorted with Quicksort with insertionsort at 10 with random pivot
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Time to sort 1000000 from 1-1000000 ASCENDING: 4 ms
+Sorted with Quicksort with insertionsort at 10 with random pivot
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Time to sort 1000000 from 1-1000000 DESCENDING: 5 ms
+Sorted with Quicksort with insertionsort at 10 with random pivot
+
+52	52	53	53	52	1	1	1	1	1	11	11	11	11	11	4	4	4	4	4	5	5	5	5	5	0	0	0	0	0	0	0	0	0	0	
+
+53	53	52	53	54	1	1	1	1	1	11	12	12	11	12	4	4	4	4	4	5	5	5	5	5	0	0	0	0	0	0	0	0	0	0	
+
+Best sorter2: 6 Best sorter4: 7
+BUILD SUCCESSFUL (total time: 18 seconds)

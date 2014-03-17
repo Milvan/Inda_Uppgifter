@@ -1,0 +1,24 @@
+This directory contains a simulator (nic), an assembler
+(nas), example programs, and exercises for NIC, the Nada
+Instructional Computer.
+
+The two programs nic and nas are Java jar-files and can be
+run as stand-alone binaries on any machine with a Java runtime
+environment.
+
+If your OS doesn't support direct execution of jar-files,
+you may need to start the programs with "java -jar nic" and
+"java -jar nas".
+
+isa.txt - instruction set architecture for NIC
+exercises.txt - stimulating exercises for you edification
+exmples - illuminating example assembly programs
+
+computer - Java source code for the simulator
+assembler - Java source code for the assembler
+
+nar.txt - NIC assembly language reference manual (to be written)
+
+Unless otherwise noted, the NIC source files are distributed
+under the BSD-style license found in the LICENSE file.
+

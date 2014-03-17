@@ -1,0 +1,72 @@
+Instruction Set Architecture for NIC, rev 1.0, 2011-02-01
+
+NIC is a big endian architecture with 2-byte words, 4-bit bytes, 16 general
+purpose 2-byte registers, and a fixed 4-byte instruction format. Words align
+on 2-byte boundaries and instructions on 4-byte boundaries. Integers are in
+two's complement format. 
+
+Instr   Code  Operands  Description
+
+halt    0     000       Halt execution.
+
+load    1     rxy       Load register r with the bit pattern found in
+                        the memory cell whose address is xy. 
+
+loadc   2     rxy       Load register r with bit pattern xy.
+
+loadr   3     0st       Load register s with the bit pattern found in the
+                        memory cell whose address is stored in register t.
+
+store   4     rxy       Store the bit pattern found in register r in
+                        the memory cell whose address is xy.
+
+storer  5     0st       Store the bit pattern found in register s in the
+                        memory cell whose address is stored in register t.
+
+move    6     0st       Copies the bit pattern found in register s to
+                        register t.
+
+add     7     rst       Add the integers in registers s and t and place
+                        the result in register r.
+
+addc    8     rxy       Add the integer xy to register r.
+
+mul     9     rst       Multiply the integers in registers s and t and
+                        place the result in register r.
+
+sub     a     rst       Subtract the integer in register t from the integer
+                        in register s and place the result in register r.
+
+shift   b     rst       Shift the bit pattern in register s the number of
+                        positions given by the integer stored in t and
+                        place the result in register r. Positive integers
+                        shift to the right, negative to the left.
+
+and     c     rst       Do a bit-wise logical and on the patterns in registers
+                        s and t and place the result in register r.
+
+or      d     rst       Do a bit-wise logical or on the patterns in registers
+                        s and t and place the result in register r.
+
+xor     e     rst       Do a bit-wise logical xor on the patterns in registers
+                        s and t and place the result in register r.
+
+jump    f     0xy       Jump to the instruction in memory cell xy.
+
+jumpe   f     rxy       Jump to the instruction in the memory cell at
+                        address xy if the bit pattern in register r
+                        is equal to the bit pattern in register r0.
+
+jumpn   f     rxy+01b   Jump to the instruction in the memory cell at
+                        address xy if the bit pattern in register r
+                        is not equal to the bit pattern in register r0.
+
+jumpl   f     rxy+10b   Jump to the instruction in the memory cell at
+                        address xy if the integer in register r
+                        is less than the integer in register r0.
+
+jumple  f     rxy+11b   Jump to the instruction in the memory cell at
+                        address xy if the integer in register r is
+                        less than or equal to the integer in register r0.
+
+noop    f     001       Do nothing.

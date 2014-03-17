@@ -1,0 +1,175 @@
+debug:
+Time to run sum(1000000): 0 ms
+Time to run sum(1000000): 0 ms
+Time to run sum(1000000): 0 ms
+Time to run sum(1000000): 0 ms
+Time to run sum(1000000): 0 ms
+Sorted [LData;@1bf5cc7d with Sorter@264430e2
+Time to run sum(1000000): 0 ms
+Time to run sum(1000000): 0 ms
+Time to run sum(1000000): 0 ms
+Time to run sum(1000000): 0 ms
+Time to run sum(1000000): 0 ms
+Sorted [LData;@1bf5cc7d with Sorter@264430e2
+Time to run sum(1000000): 792 ms
+Time to run sum(1000000): 717 ms
+Time to run sum(1000000): 731 ms
+Time to run sum(1000000): 718 ms
+Time to run sum(1000000): 717 ms
+Sorted [LData;@1bf5cc7d with Sorter@264430e2
+Time to run sum(1000000): 30 ms
+Time to run sum(1000000): 30 ms
+Time to run sum(1000000): 30 ms
+Time to run sum(1000000): 30 ms
+Time to run sum(1000000): 31 ms
+Sorted [LData;@1bf5cc7d with Sorter@264430e2
+Time to run sum(1000000): 161 ms
+Time to run sum(1000000): 161 ms
+Time to run sum(1000000): 161 ms
+Time to run sum(1000000): 162 ms
+Time to run sum(1000000): 162 ms
+Sorted [LData;@1bf5cc7d with Sorter@264430e2
+Time to run sum(1000000): 77 ms
+Time to run sum(1000000): 77 ms
+Time to run sum(1000000): 77 ms
+Time to run sum(1000000): 77 ms
+Time to run sum(1000000): 77 ms
+Sorted [LData;@1bf5cc7d with Sorter@264430e2
+Time to run sum(1000000): 74 ms
+Time to run sum(1000000): 74 ms
+Time to run sum(1000000): 73 ms
+Time to run sum(1000000): 76 ms
+Time to run sum(1000000): 74 ms
+Sorted [LData;@1bf5cc7d with Sorter@264430e2
+
+
+Time to run sum(1000000): 0 ms
+Time to run sum(1000000): 0 ms
+Time to run sum(1000000): 0 ms
+Time to run sum(1000000): 0 ms
+Time to run sum(1000000): 0 ms
+Sorted [LData;@1bf5cc7d with Sorter2@4ed1a34a
+Time to run sum(1000000): 0 ms
+Time to run sum(1000000): 0 ms
+Time to run sum(1000000): 0 ms
+Time to run sum(1000000): 0 ms
+Time to run sum(1000000): 0 ms
+Sorted [LData;@1bf5cc7d with Sorter2@4ed1a34a
+Time to run sum(1000000): 783 ms
+Time to run sum(1000000): 696 ms
+Time to run sum(1000000): 694 ms
+Time to run sum(1000000): 699 ms
+Time to run sum(1000000): 695 ms
+Sorted [LData;@1bf5cc7d with Sorter2@4ed1a34a
+Time to run sum(1000000): 32 ms
+Time to run sum(1000000): 31 ms
+Time to run sum(1000000): 30 ms
+Time to run sum(1000000): 30 ms
+Time to run sum(1000000): 31 ms
+Sorted [LData;@1bf5cc7d with Sorter2@4ed1a34a
+Time to run sum(1000000): 159 ms
+Time to run sum(1000000): 158 ms
+Time to run sum(1000000): 158 ms
+Time to run sum(1000000): 159 ms
+Time to run sum(1000000): 159 ms
+Sorted [LData;@1bf5cc7d with Sorter2@4ed1a34a
+Time to run sum(1000000): 76 ms
+Time to run sum(1000000): 77 ms
+Time to run sum(1000000): 77 ms
+Time to run sum(1000000): 77 ms
+Time to run sum(1000000): 78 ms
+Sorted [LData;@1bf5cc7d with Sorter2@4ed1a34a
+Time to run sum(1000000): 76 ms
+Time to run sum(1000000): 76 ms
+Time to run sum(1000000): 76 ms
+Time to run sum(1000000): 78 ms
+Time to run sum(1000000): 258 ms
+Sorted [LData;@1bf5cc7d with Sorter2@4ed1a34a
+
+Time to run sum(1000000): 0 ms
+Time to run sum(1000000): 0 ms
+Time to run sum(1000000): 0 ms
+Time to run sum(1000000): 0 ms
+Time to run sum(1000000): 0 ms
+Sorted [LData;@1bf5cc7d with Sorter3@45858aa4
+Time to run sum(1000000): 0 ms
+Time to run sum(1000000): 0 ms
+Time to run sum(1000000): 0 ms
+Time to run sum(1000000): 0 ms
+Time to run sum(1000000): 0 ms
+Sorted [LData;@1bf5cc7d with Sorter3@45858aa4
+Time to run sum(1000000): 750 ms
+Time to run sum(1000000): 669 ms
+Time to run sum(1000000): 682 ms
+Time to run sum(1000000): 694 ms
+Time to run sum(1000000): 664 ms
+Sorted [LData;@1bf5cc7d with Sorter3@45858aa4
+Time to run sum(1000000): 33 ms
+Time to run sum(1000000): 33 ms
+Time to run sum(1000000): 33 ms
+Time to run sum(1000000): 33 ms
+Time to run sum(1000000): 33 ms
+Sorted [LData;@1bf5cc7d with Sorter3@45858aa4
+Time to run sum(1000000): 159 ms
+Time to run sum(1000000): 160 ms
+Time to run sum(1000000): 159 ms
+Time to run sum(1000000): 145 ms
+Time to run sum(1000000): 159 ms
+Sorted [LData;@1bf5cc7d with Sorter3@45858aa4
+Time to run sum(1000000): 73 ms
+Time to run sum(1000000): 59 ms
+Time to run sum(1000000): 60 ms
+Time to run sum(1000000): 73 ms
+Time to run sum(1000000): 65 ms
+Sorted [LData;@1bf5cc7d with Sorter3@45858aa4
+Time to run sum(1000000): 71 ms
+Time to run sum(1000000): 82 ms
+Time to run sum(1000000): 80 ms
+Time to run sum(1000000): 81 ms
+Time to run sum(1000000): 62 ms
+Sorted [LData;@1bf5cc7d with Sorter3@45858aa4
+
+Time to run sum(1000000): 0 ms
+Time to run sum(1000000): 0 ms
+Time to run sum(1000000): 0 ms
+Time to run sum(1000000): 0 ms
+Time to run sum(1000000): 0 ms
+Sorted [LData;@1bf5cc7d with Sorter4@625db8ff
+Time to run sum(1000000): 0 ms
+Time to run sum(1000000): 0 ms
+Time to run sum(1000000): 0 ms
+Time to run sum(1000000): 0 ms
+Time to run sum(1000000): 0 ms
+Sorted [LData;@1bf5cc7d with Sorter4@625db8ff
+Time to run sum(1000000): 738 ms
+Time to run sum(1000000): 668 ms
+Time to run sum(1000000): 678 ms
+Time to run sum(1000000): 663 ms
+Time to run sum(1000000): 667 ms
+Sorted [LData;@1bf5cc7d with Sorter4@625db8ff
+Time to run sum(1000000): 34 ms
+Time to run sum(1000000): 33 ms
+Time to run sum(1000000): 33 ms
+Time to run sum(1000000): 34 ms
+Time to run sum(1000000): 33 ms
+Sorted [LData;@1bf5cc7d with Sorter4@625db8ff
+Time to run sum(1000000): 160 ms
+Time to run sum(1000000): 160 ms
+Time to run sum(1000000): 156 ms
+Time to run sum(1000000): 158 ms
+Time to run sum(1000000): 158 ms
+Sorted [LData;@1bf5cc7d with Sorter4@625db8ff
+Time to run sum(1000000): 68 ms
+Time to run sum(1000000): 58 ms
+Time to run sum(1000000): 58 ms
+Time to run sum(1000000): 65 ms
+Time to run sum(1000000): 68 ms
+Sorted [LData;@1bf5cc7d with Sorter4@625db8ff
+Time to run sum(1000000): 64 ms
+Time to run sum(1000000): 59 ms
+Time to run sum(1000000): 63 ms
+Time to run sum(1000000): 64 ms
+Time to run sum(1000000): 58 ms
+Sorted [LData;@1bf5cc7d with Sorter4@625db8ff
+
+BUILD SUCCESSFUL (total time: 22 seconds)

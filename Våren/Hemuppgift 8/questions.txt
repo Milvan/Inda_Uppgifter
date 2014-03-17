@@ -1,0 +1,43 @@
+Vad händer om man byter plats på satserna wgp.Wait() och close(ch) i slutet av main-funktionen?
+
+Det som händer är att man stänger kanalen för inmatning innan alla producenter är klara. 
+Man får ett fel som indikirar att man skickar data till en stängd kanal och programmet krashar.
+
+Verifierade att jag fick det.
+"panic: runtime error: send on closed channel"
+
+
+
+
+Vad händer om man flyttar close(ch) från main-funktionen och i stället stänger kanalen i slutet av funktionen Produce?
+
+Då kommer kanalen att stängas när första producenten är klar. Det blir samma fel som tidigare.
+
+
+
+
+
+Vad händer om man tar bort satsen close(ch) helt och hållet?
+
+Då kommer konsumenterna aldrig att sluta eftersom med "range" kör de till kanalen är stängd. 
+Men eftersom close(ch) exekveras i main rutinen och sedan körs en utskriftsoperation till så kommer programmet att avslutas
+ändå och därför ser det inte ut som att det händer något när man tar bort den i detta fall.
+
+I slutversionen är den dock nödvändig eftersom vi då implementerat att vänta på konsumenterna. Om inte close(ch) finns med då
+så får vi deadlock.
+
+
+
+
+Vad händer om man ökar antalet konsumenter från 2 till 4?
+
+Med fler konsumenter går det snabbare. Men det finns en gräns. Det är dumt att ha så många konsumenter att 
+många står still och bara väntar hela tiden. 4 är ganska bra då varje konsument kan ta en sträng från varje producent.
+
+
+
+
+Kan man vara säker på att alla strängar blir utskrivna innan programmet stannar?
+
+Nej inte i ursprungsprogrammet. Eftersom programmet inte väntar på att konsumenterna blir klara. Det är möjligt
+att kunsumenterna inte hunnit skriva ut allt innan programmet avslutas.

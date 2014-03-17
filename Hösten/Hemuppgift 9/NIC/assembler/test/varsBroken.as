@@ -1,0 +1,10 @@
+code brokenCode a + - -0xf 0x+ 0x- 0xffff
+word brokenWord a + - -0xf 0x+ 0x- 0xff
+
+code neg -1 -2 -128
+word wordRange -129 128
+code code#Range -1 65536 0x10000 0xffff
+
+code mix a -1 b 0xfffff
+
+start:  jump brokenCode-2

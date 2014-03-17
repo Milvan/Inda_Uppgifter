@@ -1,0 +1,50 @@
+Exercises for your edification
+
+The numbers before each exercise are estimates of difficulty
+and scope.
+
+2. Write a program that multiplies every elements in an
+   array with the same number.
+
+5. Write a program that reverses the order of the elements
+   in an array.
+
+6. Write a program that translates degrees Fahrenheit to
+   degrees Celsius. The program should work for all values
+   from -95 to 127. Input and output to the program should
+   come from RAM. (Hint: 5/9 ≈ 1/2 + 1/16.)
+
+4. Count the number of nonzero bits in a word.
+
+6. Count the number of nonzero bits in the whole memory.
+   Try to reuse the code from the previous exercise.
+   You will need two registers to store the result since
+   the machine has a total of 1024 bits. Your program should
+   finish within 10 seconds when the CPU is running at 1kHz.
+
+2. Write a program that moves the word 0xff around in an
+   interesting pattern in the lower half of the memory.
+
+8. Write a program that makes a copy of itself and then
+   executes the copy. Yes, your program will fill up the
+   memory, over and over again.
+
+6. Write a program that can add two four-byte integers
+   in two's complement notation.
+
+4-12. Design and implement a game for NIC.
+
+2. Write a program that computes and prints (in RAM) the
+   first thirteen Fibonacci numbers: 1, 1, 2, 3, 5, 8, ...
+
+4. Write a program that starts with a positive number a[0]
+   and prints (in RAM) the sequence a[0], a[1], a[2], ..., 1
+   according to the rules:
+
+   • if a[i] is even, a[i+1] = a[i] / 2;
+   • if a[i] is odd, a[i+1] = 3a[i] + 1;
+   • if a[i] = 1, stop.
+   
+   For example, starting with a[0] = 3, the sequence is
+   3, 10, 5, 16, 8, 4, 2, 1.
+
