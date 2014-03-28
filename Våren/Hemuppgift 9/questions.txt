@@ -1,0 +1,24 @@
+Vad händer om man tar bort go-kommandot från Seek-anropet i main-funktionen?
+Då kommer den funktionen ej köras parrallellt och första personen kommer 
+skicka eftersom select satsen kommer att välja det caset då ta emot ej är möjligt än.
+Nästa person tar emot eftersom det caset kommer först i select och det är då möjligt att köras, 
+samt match kanalen är full.
+3e skickar till 4e och 5e skickar men ingen tar emot.
+
+
+Vad händer om man byter deklarationen wg := new(sync.WaitGroup) mot var wg sync.WaitGroup och parametern wg *sync.WaitGroup mot wg sync.WaitGroup?
+Vad man gör är att skicka en kopia av wg till funktionen. När man sedan ska vänta på wg 
+så kommer den aldrig registreras som klar då funktionen Seek bara ändrar på kopian.
+Man får Deadlock när funktionen når person 5 som skickar och det sedan inte är någon ny som tar emot.
+Då är alla processer sovande.
+
+
+Vad händer om man tar bort bufferten på kanalen match?
+Deadlock. (ej buffrad kanal) Vet ej varför riktigt.
+
+
+
+Vad händer om man tar bort default-fallet från case-satsen i main-funktionen?
+Ingenting i denna version av programmet. Eftersom case name:=<-match kommer vara genomförbart då det är 5 personer så körs den koden.
+OM man ändrar antalet personer till ett jämt antal dock så kommer man att få deadlock. Då väntar man nämligen på en kanal
+som inte kommer få mer värden skickade till sig.

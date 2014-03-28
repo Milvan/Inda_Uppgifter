@@ -14,6 +14,7 @@ func Add(a []int, res chan<- int) {
 
 }
 
+// Calculates the sum of all numbers in an array with parrallell programming.
 func main() {
 	a := []int{1, 2, 3, 4, 5, 6, 7}
 

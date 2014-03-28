@@ -5,6 +5,9 @@ import (
 	"strings"
 )
 
+// Counts how many times each word in a string occurs.
+// Returns a map of all the unique words and how many times
+// it occured in the string
 func WordCount(s string) map[string]int {
 	m := make(map[string]int)
 	for _, a := range strings.Fields(s) {

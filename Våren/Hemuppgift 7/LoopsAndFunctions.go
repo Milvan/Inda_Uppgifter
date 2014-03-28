@@ -5,6 +5,7 @@ import (
 	"math"
 )
 
+// This method will approximate the square root of a given number.
 func Sqrt(x float64) float64 {
 	z := float64(4)
 	diff := 1.0
@@ -17,6 +18,7 @@ func Sqrt(x float64) float64 {
 	return z
 }
 
+// Prints approximation of sqrt of a number and then prints math.Sqrt result.
 func main() {
 	fmt.Println("Newtons method")
 	fmt.Println("Sqrt(2): ", Sqrt(2))

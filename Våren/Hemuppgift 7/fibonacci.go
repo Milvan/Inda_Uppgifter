@@ -19,6 +19,7 @@ func fibonacci() func() int {
 	}
 }
 
+// print 10 first fibonacci numbers.
 func main() {
 	f := fibonacci()
 	for i := 0; i < 10; i++ {
