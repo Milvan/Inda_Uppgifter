@@ -17,6 +17,7 @@ import (
 	"time"
 )
 
+//This is for measure time while optimising
 type Stopwatch struct {
 	start, stop time.Time       // no need for lap, see mark
 	mark        time.Duration   // mark is the duration from the start that the most recent lap was started
@@ -71,7 +72,7 @@ func CreatePng(filename string, f ComplexFunc, n int, wg *sync.WaitGroup) (err e
 // Julia returns an image of size n x n of the Julia set for f.
 func Julia(f ComplexFunc, n int) image.Image {
 	wgp := new(sync.WaitGroup)
-	wgp.Add(n * n)
+	wgp.Add(n)
 	bounds := image.Rect(-n/2, -n/2, n/2, n/2)
 	img := image.NewRGBA(bounds)
 	s := float64(n / 4)
@@ -86,9 +87,9 @@ func Julia(f ComplexFunc, n int) image.Image {
 				g := uint8(0)
 				b := uint8(n % 32 * 8)
 				img.Set(temp, temp2, color.RGBA{r, g, b, 255})
-				wgp.Done()
+				//wgp.Done()
 			}
-			//wgp.Done()
+			wgp.Done()
 		}()
 	}
 	wgp.Wait()
