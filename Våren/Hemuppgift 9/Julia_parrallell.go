@@ -28,13 +28,13 @@ type ComplexFunc func(complex128) complex128
 
 var Funcs []ComplexFunc = []ComplexFunc{
 	func(z complex128) complex128 { return cmplx.Sqrt(cmplx.Sinh(z*z)) + complex(0.065, 0.122) },
-	func(z complex128) complex128 { return z*z - 0.61803398875 },
-	func(z complex128) complex128 { return z*z + complex(0, 1) },
-	func(z complex128) complex128 { return z*z + complex(-0.835, -0.2321) },
-	func(z complex128) complex128 { return z*z + complex(0.45, 0.1428) },
-	func(z complex128) complex128 { return z*z*z + 0.400 },
-	func(z complex128) complex128 { return cmplx.Exp(z*z*z) - 0.621 },
-	func(z complex128) complex128 { return (z*z+z)/cmplx.Log(z) + complex(0.268, 0.060) },
+	//func(z complex128) complex128 { return z*z - 0.61803398875 },
+	//func(z complex128) complex128 { return z*z + complex(0, 1) },
+	//func(z complex128) complex128 { return z*z + complex(-0.835, -0.2321) },
+	//func(z complex128) complex128 { return z*z + complex(0.45, 0.1428) },
+	//func(z complex128) complex128 { return z*z*z + 0.400 },
+	//func(z complex128) complex128 { return cmplx.Exp(z*z*z) - 0.621 },
+	//func(z complex128) complex128 { return (z*z+z)/cmplx.Log(z) + complex(0.268, 0.060) },
 }
 
 func main() {
@@ -72,7 +72,7 @@ func CreatePng(filename string, f ComplexFunc, n int, wg *sync.WaitGroup) (err e
 // Julia returns an image of size n x n of the Julia set for f.
 func Julia(f ComplexFunc, n int) image.Image {
 	wgp := new(sync.WaitGroup)
-	wgp.Add(n)
+	wgp.Add(n*n) 
 	bounds := image.Rect(-n/2, -n/2, n/2, n/2)
 	img := image.NewRGBA(bounds)
 	s := float64(n / 4)
@@ -82,14 +82,17 @@ func Julia(f ComplexFunc, n int) image.Image {
 
 			for j := bounds.Min.Y; j < bounds.Max.Y; j++ {
 				temp2 := j
+				//go func(){
+				
 				n := Iterate(f, complex(float64(temp)/s, float64(temp2)/s), 256)
 				r := uint8(0)
 				g := uint8(0)
 				b := uint8(n % 32 * 8)
 				img.Set(temp, temp2, color.RGBA{r, g, b, 255})
-				//wgp.Done()
+				wgp.Done()  // set
+				//}() 
 			}
-			wgp.Done()
+			//wgp.Done()
 		}()
 	}
 	wgp.Wait()

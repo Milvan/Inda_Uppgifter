@@ -16,7 +16,6 @@ Då kommer kanalen att stängas när första producenten är klar. Det blir samma fel
 
 
 
-
 Vad händer om man tar bort satsen close(ch) helt och hållet?
 
 Då kommer konsumenterna aldrig att sluta eftersom med "range" kör de till kanalen är stängd. 
@@ -25,7 +24,6 @@ Men eftersom close(ch) exekveras i main rutinen och sedan körs en utskriftsopera
 
 I slutversionen är den dock nödvändig eftersom vi då implementerat att vänta på konsumenterna. Om inte close(ch) finns med då
 så får vi deadlock.
-
 
 
 
