@@ -2,8 +2,9 @@ Jag gjorde så att jag testade lite olika varianter. Första tanken var att dela u
 Det gav inte så mycket förbättring eftersom det bara var sista bilden som tog lång tid.
 
 Jag testade då att först låta varje rad i bilden bli en go rutin. Sedan att varje pixel fick bli en go rutin.
-Min dator klarade inte av att ha en rutin per pixel. Jag fick många utskrivna fel.
-Jag implementerade då en klocka och tod tiden för generationen av bilderna. Dessutom implementerade jag att köra
-varje bild som en egen rutin också.
+Min dator klarade inte av att ha en rutin per pixel. Datorns ramminnesförbrukning gick upp till 14GB. Sen gick det bara väldigt segt.
+Jag körde på varje rad då istället och fick ned tiden ganska mycket. 
+
+Som en intressant koll implementerade jag då en klocka och tod tiden för generationen av bilderna, kod för klockan är lånad från nätet. 
 Jag avslutade med att sätta den sista funktionen först i listan också så att den påbörjas så tidigt som möjligt. 
 Det ger nästa ingenting men en mycket enkel sak att tänka på bara.

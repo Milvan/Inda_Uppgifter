@@ -28,13 +28,13 @@ type ComplexFunc func(complex128) complex128
 
 var Funcs []ComplexFunc = []ComplexFunc{
 	func(z complex128) complex128 { return cmplx.Sqrt(cmplx.Sinh(z*z)) + complex(0.065, 0.122) },
-	//func(z complex128) complex128 { return z*z - 0.61803398875 },
-	//func(z complex128) complex128 { return z*z + complex(0, 1) },
-	//func(z complex128) complex128 { return z*z + complex(-0.835, -0.2321) },
-	//func(z complex128) complex128 { return z*z + complex(0.45, 0.1428) },
-	//func(z complex128) complex128 { return z*z*z + 0.400 },
-	//func(z complex128) complex128 { return cmplx.Exp(z*z*z) - 0.621 },
-	//func(z complex128) complex128 { return (z*z+z)/cmplx.Log(z) + complex(0.268, 0.060) },
+	func(z complex128) complex128 { return z*z - 0.61803398875 },
+	func(z complex128) complex128 { return z*z + complex(0, 1) },
+	func(z complex128) complex128 { return z*z + complex(-0.835, -0.2321) },
+	func(z complex128) complex128 { return z*z + complex(0.45, 0.1428) },
+	func(z complex128) complex128 { return z*z*z + 0.400 },
+	func(z complex128) complex128 { return cmplx.Exp(z*z*z) - 0.621 },
+	func(z complex128) complex128 { return (z*z+z)/cmplx.Log(z) + complex(0.268, 0.060) },
 }
 
 func main() {
@@ -53,8 +53,8 @@ func main() {
 		}()
 	}
 	wg.Wait() //Wait for all pictures to be done
-	//clock.Stop()
-	fmt.Print(clock.ElapsedTime()) // prints the time it took for the pictures to be generated
+	time:=clock.ElapsedTime()
+	fmt.Print(time) // prints the time it took for the pictures to be generated
 }
 
 // CreatePng creates a PNG picture file with a Julia image of size n x n.
@@ -72,27 +72,21 @@ func CreatePng(filename string, f ComplexFunc, n int, wg *sync.WaitGroup) (err e
 // Julia returns an image of size n x n of the Julia set for f.
 func Julia(f ComplexFunc, n int) image.Image {
 	wgp := new(sync.WaitGroup)
-	wgp.Add(n*n) 
+	wgp.Add(n) 
 	bounds := image.Rect(-n/2, -n/2, n/2, n/2)
 	img := image.NewRGBA(bounds)
 	s := float64(n / 4)
 	for i := bounds.Min.X; i < bounds.Max.X; i++ {
 		temp := i
 		go func() {
-
 			for j := bounds.Min.Y; j < bounds.Max.Y; j++ {
-				temp2 := j
-				//go func(){
-				
-				n := Iterate(f, complex(float64(temp)/s, float64(temp2)/s), 256)
+				n := Iterate(f, complex(float64(temp)/s, float64(j)/s), 256)
 				r := uint8(0)
-				g := uint8(0)
-				b := uint8(n % 32 * 8)
-				img.Set(temp, temp2, color.RGBA{r, g, b, 255})
-				wgp.Done()  // set
-				//}() 
+				g := uint8(n % 32 * 8)
+				b := uint8(0)
+				img.Set(temp, j, color.RGBA{r, g, b, 255})	
 			}
-			//wgp.Done()
+			wgp.Done()
 		}()
 	}
 	wgp.Wait()

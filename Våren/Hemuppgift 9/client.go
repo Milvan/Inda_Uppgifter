@@ -9,28 +9,28 @@ import (
 )
 
 func main() {
-	numOfRoutines :=0
-	routines:=make(chan int)
+//	numOfRoutines :=0
+//	routines:=make(chan int)
 	server := []string{
 		"http://localhost:8080",
 		"http://localhost:8081",
 		"http://localhost:8082",
 	}
-	go func(){
-		for{
-			i := <-routines
-			numOfRoutines = numOfRoutines + i
-		}
-	}()
+//	go func(){
+//		for{
+//			i := <-routines
+//			numOfRoutines = numOfRoutines + i
+//		}
+//	}()
 	for {
 		before := time.Now()
 		//res := Get(server[0])
 		//res := Read(server[0], time.Second)
-		res := MultiRead(server, time.Second, routines)
+		res := MultiRead(server, time.Second)
 		after := time.Now()
 		fmt.Println("Response:", *res)
 		fmt.Println("Time:", after.Sub(before))
-		fmt.Println("numOfRoutines: ", numOfRoutines)
+//		fmt.Println("numOfRoutines: ", numOfRoutines)
 		fmt.Println()
 		time.Sleep(500 * time.Millisecond)
 	}
@@ -65,12 +65,11 @@ func Get(url string) *Response {
 func Read(url string, timeout time.Duration) (res *Response) {
 	done := make(chan *Response)
 	go func() {
-		r := Get(url)
+		r := Get(url) //memory leak if server does not respond. Go routine will still exist but be blocked.
 		done <- r
 	}()
 	select {
-	case r:= <-done:
-		res=r
+	case res=<-done:
 	case <-time.After(timeout):
 		res = &Response{"Gateway timeout\n", 504}
 	}
@@ -81,24 +80,20 @@ func Read(url string, timeout time.Duration) (res *Response) {
 // the response of the first server to answer with status code 200.
 // If none of the servers answer before timeout, the response is
 // 503 â€“ Service unavailable.
-func MultiRead(urls []string, timeout time.Duration, routines chan(int)) (res *Response) {
+func MultiRead(urls []string, timeout time.Duration) (res *Response) {
 	response := make(chan *Response)
-	for n, url := range urls {
+	for _, url := range urls {
 
-		go func(u string, num int){
-				routines<-1
-
+		go func(u string){
 				r:=Read(u, timeout)
-				routines<- -1
 				if r.StatusCode==200{
 					response<-r
 				}
 				
-			}(url, n)
+			}(url)
 	}
 	select {
-	case r:=<-response:
-		res=r
+	case res=<-response:
 	case <-time.After(timeout):
 		res = &Response{"Service unavailable\n", 503}
 	}
