@@ -9,19 +9,11 @@ import (
 )
 
 func main() {
-//	numOfRoutines :=0
-//	routines:=make(chan int)
 	server := []string{
 		"http://localhost:8080",
 		"http://localhost:8081",
 		"http://localhost:8082",
 	}
-//	go func(){
-//		for{
-//			i := <-routines
-//			numOfRoutines = numOfRoutines + i
-//		}
-//	}()
 	for {
 		before := time.Now()
 		//res := Get(server[0])
@@ -30,7 +22,6 @@ func main() {
 		after := time.Now()
 		fmt.Println("Response:", *res)
 		fmt.Println("Time:", after.Sub(before))
-//		fmt.Println("numOfRoutines: ", numOfRoutines)
 		fmt.Println()
 		time.Sleep(500 * time.Millisecond)
 	}
@@ -58,14 +49,13 @@ func Get(url string) *Response {
 	return &Response{string(body), res.StatusCode}
 }
 
-// FIXME
-// I've found two insidious bugs in this function; both of them are unlikely
-// to show up in testing. Please fix them right away â€“ and don't forget to
-// write a doc comment this time.
+// Read makes an HTTP Get request to the given url and returns the response.
+// If the server does not respond within the timeout the response is Gateway timeout
+// with code 504
 func Read(url string, timeout time.Duration) (res *Response) {
-	done := make(chan *Response)
+	done := make(chan *Response, 1)
 	go func() {
-		r := Get(url) //memory leak if server does not respond. Go routine will still exist but be blocked.
+		r := Get(url) //memory leak if server does not respond. Go routine will still exist but be blocked. This bug is in http.Get and I cannot fix it.
 		done <- r
 	}()
 	select {
@@ -81,11 +71,11 @@ func Read(url string, timeout time.Duration) (res *Response) {
 // If none of the servers answer before timeout, the response is
 // 503 â€“ Service unavailable.
 func MultiRead(urls []string, timeout time.Duration) (res *Response) {
-	response := make(chan *Response)
+	response := make(chan *Response, len(url))
 	for _, url := range urls {
 
 		go func(u string){
-				r:=Read(u, timeout)
+				r:=Get(u)
 				if r.StatusCode==200{
 					response<-r
 				}
@@ -97,5 +87,5 @@ func MultiRead(urls []string, timeout time.Duration) (res *Response) {
 	case <-time.After(timeout):
 		res = &Response{"Service unavailable\n", 503}
 	}
-	return // TODO
+	return 
 }
