@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.NoSuchElementException;
+import static kth.csc.inda.Graph.NO_COST;
 
 /**
  * A graph with a fixed number of vertices implemented using adjacency maps.
@@ -53,6 +54,7 @@ public class HashGraph implements Graph {
 		if (edges[from].put(to, cost) == null)
 			numEdges++;
 	}
+        
 
 	/**
 	 * {@inheritDoc Graph} Time complexity: O(1).
@@ -75,26 +77,68 @@ public class HashGraph implements Graph {
 	 */
 	@Override
 	public int degree(int v) throws IllegalArgumentException {
-		// TODO
-		return 0;
+		checkVertexParameter(v);
+                if(edges[v]==null){
+                    return 0;
+                } else {
+                    return edges[v].size();
+                }
 	}
 
-	/**
-	 * {@inheritDoc Graph}
+        
+        /**
+	 * {@inheritDoc Graph} 
 	 */
 	@Override
-	public VertexIterator neighbors(int v) {
-		// TODO
-		return null;
+	public VertexIterator neighbors(int v) throws IllegalArgumentException {
+		checkVertexParameter(v);
+
+		return new NeighborIterator(v);
 	}
+
+	private class NeighborIterator implements VertexIterator {
+                Map<Integer, Integer> adj;
+		
+                Iterator<Integer> it;
+                
+               NeighborIterator(int v){
+                   adj = edges[v];
+		   if (adj !=null){
+                       it = adj.keySet().iterator();
+                   } else {
+                       it = new HashSet<Integer>().iterator();
+                   }
+                   
+               }
+               
+               /**
+                * {@inheritDoc VertexIterator} 
+                */
+               @Override
+               public boolean hasNext(){
+                   return it.hasNext();
+               }
+               
+               /**
+                * {@inheritDoc VertexIterator}
+                */
+                @Override
+                public int next() throws NoSuchElementException {
+                    return it.next();
+               }
+        }
 
 	/**
 	 * {@inheritDoc Graph}
 	 */
 	@Override
 	public boolean hasEdge(int v, int w) {
-		// TODO
-		return false;
+		checkVertexParameters(v,w);
+                if(edges[v]==null){
+                    return false;
+                } else {   
+                    return edges[v].containsKey(w);
+                }
 	}
 
 	/**
@@ -102,7 +146,9 @@ public class HashGraph implements Graph {
 	 */
 	@Override
 	public int cost(int v, int w) throws IllegalArgumentException {
-		// TODO
+		if (hasEdge(v,w)){
+                    return edges[v].get(w);
+                }
 		return NO_COST;
 	}
 
@@ -111,7 +157,8 @@ public class HashGraph implements Graph {
 	 */
 	@Override
 	public void add(int from, int to) {
-		// TODO
+                checkVertexParameters(from, to);
+		addEdge(from, to, NO_COST);
 	}
 
 	/**
@@ -119,7 +166,9 @@ public class HashGraph implements Graph {
 	 */
 	@Override
 	public void add(int from, int to, int c) {
-		// TODO
+                checkVertexParameters(from, to);
+                checkNonNegativeCost(c);
+		addEdge(from, to, c);
 	}
 
 	/**
@@ -127,7 +176,8 @@ public class HashGraph implements Graph {
 	 */
 	@Override
 	public void addBi(int v, int w) {
-		// TODO
+		add(v, w);
+                add(w, v);
 	}
 
 	/**
@@ -135,7 +185,8 @@ public class HashGraph implements Graph {
 	 */
 	@Override
 	public void addBi(int v, int w, int c) {
-		// TODO
+		add(v, w, c);
+                add(w, v, c);
 	}
 
 	/**
@@ -143,7 +194,9 @@ public class HashGraph implements Graph {
 	 */
 	@Override
 	public void remove(int from, int to) {
-		// TODO
+		checkVertexParameters(from, to);
+                if (edges[from].remove(to) != null)
+                    numEdges--;
 	}
 
 	/**
@@ -151,7 +204,44 @@ public class HashGraph implements Graph {
 	 */
 	@Override
 	public void removeBi(int v, int w) {
-		// TODO
+		checkVertexParameters(v, w);
+                edges[v].remove(w);
+                edges[w].remove(v);
+                
+	}
+        
+        /**
+	 * Checks two vertex parameters v and w.
+	 * 
+	 * @throws IllegalArgumentException
+	 *             if v or w is out of range
+	 */
+	private void checkVertexParameters(int v, int w) {
+		if (v < 0 || v >= edges.length || w < 0 || w >= edges.length)
+			throw new IllegalArgumentException("Out of range: v = " + v
+					+ ", w = " + w + ".");
+	}
+        
+        /**
+	 * Checks a single vertex parameter v.
+	 * 
+	 * @throws IllegalArgumentException
+	 *             if v is out of range
+	 */
+	private void checkVertexParameter(int v) {
+		if (v < 0 || v >= edges.length)
+			throw new IllegalArgumentException("Out of range: v = " + v + ".");
+	}
+        
+        /**
+	 * Checks that the cost c is non-negative.
+	 * 
+	 * @throws IllegalArgumentException
+	 *             if c < 0
+	 */
+	private void checkNonNegativeCost(int c) {
+		if (c < 0)
+			throw new IllegalArgumentException("Illegal cost: c = " + c + ".");
 	}
 
 	/**
@@ -161,7 +251,29 @@ public class HashGraph implements Graph {
 	 */
 	@Override
 	public String toString() {
-		// TODO
-		return "";
+            StringBuilder sb = new StringBuilder();
+            sb.append("{");
+		for (int i=0; i<edges.length;i++) {
+                    Map<Integer, Integer> m = edges[i];
+                    if (m!=null){
+                        for (Integer j : m.keySet()){
+                           int x = m.get(j);
+                           switch (x) {
+                                    case NO_COST:
+                                        sb.append("(" + i + "," + j + "), ");
+                                        break;
+                                    default:
+					sb.append("(" + i + "," + j + "," + x + "), ");
+				}
+                        }
+                    }
+                
+                }
+                int length = sb.length();
+                if (length>2){
+                    sb.delete(length-2, length);
+                }
+                sb.append("}");
+		return sb.toString();
 	}
 }

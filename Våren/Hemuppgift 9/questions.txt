@@ -14,7 +14,10 @@ Då är alla processer sovande.
 
 
 Vad händer om man tar bort bufferten på kanalen match?
-Deadlock. (ej buffrad kanal) Vet ej varför riktigt.
+Deadlock. Det som händer är att programmet stannar om det är ett ojämt antal personer. 
+Den stannar då i Seek metoden på raden: case: match<-name eftersom det inte
+finns någon mer som kan ta emot och då kommer man aldrig till
+wg.Done() som för att main kan gå vidare.
 
 
 
@@ -22,3 +25,31 @@ Vad händer om man tar bort default-fallet från case-satsen i main-funktionen?
 Ingenting i denna version av programmet. Eftersom case name:=<-match kommer vara genomförbart då det är 5 personer så körs den koden.
 OM man ändrar antalet personer till ett jämt antal dock så kommer man att få deadlock. Då väntar man nämligen på en kanal
 som inte kommer få mer värden skickade till sig.
+
+
+
+Client.go
+Fel 1: Data race
+Första felet är ett data race på pekaren res.
+Man definierar i funktionen att den returnerar *Response med 
+namn res. Sedan i go func sätter man res och det kan ske samtidigt som
+man har tajmat ur och sätter res till något annat i select satsen.
+Löser problemet genom att skicka det man får från get på kanalen istället.
+
+Fel 2: Memory block
+När funktionen tajmar ur och väljer att sätta res i select satsen så
+kan det hända att go funktionen efter det får ett svar från get och 
+vill då skicka på kanalen. Men det finns inte längre någon som väntar
+på något svar genom kanalen och den rutinen låser sig. Man har då 
+skapat att varje gång den tajmar ur får man en låst go rutin som 
+allokerar minne och som aldrig släpps.
+Löser felet genom att buffra kanalen. Då kan gorutinen skicka på kanalen
+ändå och sedan avslutas för att frigöra det lilla minne den tar upp.
+
+Fel 3: Memory block
+Precis samma som fel 2. Men det som händer är att Get aldrig svarar.
+Då kommer rutinen att stanna innan den försöker skicka på kanalen.
+Detta innebär att varje gång Get inte svarar och blockerar för alltid
+kommer vi att få en ny rutin som står still och allokerar minne.
+Denna bug kan man inte fixa i read utan behöver se till att funktionen 
+Get då inte skulle blocka, vilket ligger i http.Get.
