@@ -1,0 +1,79 @@
+Kan man skapa en graf med 5 hörn 4 kanter och 3 komponenter?
+Ja. Sätt hörnmängd = {(1,1),(1,2),(3,3),(3,4)} av hörn 1,2,3,4,5.
+
+
+Grapg G:
+DFS sökning: 0 1 0 4 1 3 0 4 5 3
+djupet kommer att besöka vissa hörn flera gånger i en sammanhängande graf.
+
+BFS sökning: 0 1 3 4 5
+0 markeras visited och köas.
+0 dequeue, besök alla grannar till 0 ger att 1 och 3 besöks som också läggs på kön. Sedan
+besöks grannar till 1(0 och 4) som köas. Sedan alla obesökta till 3, (endast 5.) Då är alla sedan besökta.
+
+Skulle du representera en graf med hjälp av en närhetsmatris eller med hjälp av närhetslistor i följande fall? Motivera dina svar.
+Grafen har 1000 hörn och 2000 kanter och det är viktigt att vara sparsam med minnet.
+Grafen har 1000 hörn och 50000 kanter och det är viktigt att vara sparsam med minnet.
+Det är viktigt att snabbt (på konstant tid) kunna avgöra om två hörn är grannar. Om möjligt vill du också vara sparsam med minnet.
+Förklara varför DFS tar O(n2) tid för en sammanhängande graf med n hörn om grafen representeras med en närhetsmatris.
+
+För att endast vara sparsam med minnet skulle jag i båda fallen använda närhetslistor. Anledningen till det är att 
+om man använder närhetsmatris på 1000 hörn så kommer jag ha en matris med 1000000 platser. Endast 2000 eller 50000
+kanter skulle då ge extremt många överflödiga nollor.
+Om man räknar in att det är viktigt att på konstant tid kunna avgöra om 2 hörn har en kant så kan det se lite annorlunda
+ut beroende på situation. Vi har flera fall.
+Fall 1:
+Antag att vi vet index till dessa hörn. Och att närhetslistan består av en array av linked lists. Där den länkade listan
+innehåller endast alla grannar till hörnet.
+Då kommer närhetsmatrisen att hitta ett svar på konstant tid. Närhetslistan kan komma till rätt länkade lista på
+konstant tid men sen måste man iterera genom listan för att hitta om det andra hörnet finns i den listan.
+Fall 2:
+Antag att vi vet index till hörnen och närhetslistan består av en array av hashmaps. Närhetsmatrisen ger ett svar på 
+konstant tid. Närhetsmatrisen hittar rätt hashmap på konstant tid och sedan kan man anropa keyset().contains(w) som
+också kör på konstant tid. Detta ger att det blir konstant tid för båda datatyper.
+Fall 3:
+Antag att vi inte vet index. Då skulle närhetsmatrisen ge att vi först måste hitta rätt element i första listan. 
+Sedan efter det hitta rätt element i nästa lista. Detta blir O(n^2).
+För en närhetslista med länkade listor blir det också O(n^2) då p.g.a. samma anledning. Måste iterera genom båda 
+listorna för att hitta rätt hörn.
+Fall 4:
+Närhetsmatris samma som fall 3.
+För närhetslista med hashmap har vi då O(n) att hitta rätt hashmap och sedan konstant tid genom contains så då har
+vi O(n). 
+
+För fall 2 och 4 är valet lätt. Det blir närhetslista i båda fallen eftersom den tar mindre onödigt minne och är
+snabbast eller lika snabb.
+
+Fall 1 för fall ett, om tiden är snabbast måste vi välja närhetsmatris för att få konstant tid. Det kommer dock att
+ta väldigt mycket överflödigt minne för endast 2000 kanter och man kanske skulle kunna stå ut med den korta tiden det 
+tar att iterera genom 2000 element i en länkad lista, då kunde man spara minne.
+För 50000 kanter väljer jag matrisen eftersom det tar för lång tid att iterera genom en länkad lista som skulle
+kunna vara med 50000 element i det fallet.
+
+fall 3.
+Om vi inte vet index kan vi inte få det på konstant tid. Om vi har O(n^2) på båda så bör vi välja närhetslistan 
+p.g.a. att spara minne.
+
+
+HashGraph, MatrixGraph
+brytpunkt funnen vid 160 efter testning.
+>200 HashGraph snabbare.
+<160 MatrixGraph snabbare.
+
+n=1000
+Vid en körning fick jag då 163 komponenter där den största komponenten var 785.
+Körning 2: fick jag 172 komponenter och med största storlek 775.
+
+
+Vilken datastruktur är bäst i det här fallet? Varför? 
+Förklara genom att beräkna tidskomplexiteten för DFS med närhetsmatris samt för DFS med närhetslistor.
+Att göra DFS sökning på närhetsmatris kan bli O(n^2) p.g.a. att man loopar igenom och anropar igen för varje
+granne till v. Då måste man först söka efter alla grannar till v vilket tar O(n). Enkelt sagt får vi 
+en loop O(n) inne i en annan loop (DFS sökningen/rekursionen) som också är O(n). Detta ger som vi vet O(n^2).
+Med vår närhetslista som är implementerad med hashmaps. Genom den implementationen har vi ingen tid på att 
+hitta alla grannar eftersom de består bara av grannarna. Dock så om vi ska beräkna värsta fallet så är det när
+vi har en graf som bara är en komponent där alla hörn har länkar till alla hörn. Då har vi exakt en närhetsmatris med
+alla ettor. Detta ger ju då att vi måste köra DFS för alla hörn och de i sin tur kör för alla hörn. Vilket också ger O(n^2).
+Däremot om det inte är så många kanter så får vi betydligt färre operationer och närhetslistan har en bättre
+bästa tid.
+Enligt mina tester bör jag använda närhetslistan för n>200. Annars närhetsmatriser.
