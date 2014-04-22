@@ -214,3 +214,17 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 /Våren/Hemuppgift 10/nbproject/private/
+/Våren/Hemuppgift 11/GraphSearch/nbproject/private/
+
+############
+## NetBeans
+############
+nbproject/
+
+##########
+## Java
+##########
+
+#Builds
+*.class
+
