@@ -7,6 +7,12 @@ import java.util.Random;
 public class GraphGenerator {
     private Random r = new Random();
     
+    public static void main(String args[]){
+        GraphGenerator g = new GraphGenerator();
+        Graph[] gphs = g.randomGraph(20);
+        System.out.println(gphs[0].toString());
+    }
+    
     /**
      * This method will generate a random HashGraph with n nodes.
      * @param n number of nodes in graph
