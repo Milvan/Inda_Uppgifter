@@ -94,7 +94,7 @@ public class GraphExercise {
         private int calculateComponents(Graph g){
             int numOfComponents = 0;
             
-            VertexAction printVertex = new VertexAction() {
+            VertexAction countVertex = new VertexAction() {
 			@Override
 			public void act(Graph g, int v) {
                                 counter.count();
@@ -105,7 +105,7 @@ public class GraphExercise {
 		for (int v = 0; v < n; v++) {
                         counter.resetCounter();
 			if (!visited[v]) {
-				dfs(g, v, visited, printVertex);
+				dfs(g, v, visited, countVertex);
                                 numOfComponents++;
                                 componentsSize[v]=counter.getValue();
 			}
